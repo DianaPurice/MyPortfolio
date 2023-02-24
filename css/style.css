@@ -106,7 +106,7 @@ nav a {
 main {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 25vh 75vh 15vh;
+  grid-template-rows: 25vh 80vh 15vh;
   grid-template-areas:
     "about"
     "work"
@@ -152,10 +152,64 @@ main {
   justify-content: space-around;
   align-items: center;
   border-left: 3px solid var(--header-text);
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 #contact a {
   text-decoration: none;
   color: var(--header-text);
   border-bottom: 2px solid var(--header-text);
   padding-bottom: 2%;
+}/* work */
+#app-container {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 20% 25% 25% 25% 25%;
+  grid-template-areas: 
+  "first-app first-app"
+  "first-app first-app"
+  "second-app third-app"
+  "fourth-app fifth-app";
+}
+.app {
+  content: url(../images/02-portfolio-1.jpg);
+  border: 5px solid var(--header-text) !important;
+  padding: 0 !important;
+  opacity: 0.5;
+}
+.app:hover {
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
+
+.row2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.row3 {
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+.row2, .row3 {
+  margin-left: 2%;
+  width: 98% !important;
+}
+.column1 {
+  margin-right: 2%;
+  margin-left: 0;
+}
+#first {
+  grid-area: first-app;
+}
+#second {
+  grid-area: second-app;
+}
+#third {
+  grid-area: third-app;
+}
+#fourth {
+  grid-area: fourth-app;
+}
+#fifth {
+  grid-area: fifth-app;
 }
