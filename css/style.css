@@ -20,6 +20,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--page-background);
+  color: var(--text);
 }
 
 h1,
@@ -82,5 +83,25 @@ nav a {
   border-bottom: 3px solid rgba(104, 129, 73, 255);
   color: rgba(104, 129, 73, 255);
   font-weight: bold;
+}
+/* banner section */
+.hero-banner {
+  height: 200px;
+  display: flex;
+  background-image: url(../images/luisa-ji-SpKT27bNSOQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+.hero-banner h2 {
+  margin-bottom: 10px;
+  color: var(--header-background);
+  font-weight: bolder;
+  border-bottom: 2px double var(--header-background);
+}
+.hero-banner span {
+  margin-left: 260px;
 }
 
