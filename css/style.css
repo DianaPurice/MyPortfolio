@@ -3,7 +3,7 @@
   --page-background: rgb(218, 233, 228);
   --text: rgba(104, 129, 73, 255);
   --header-text:  #252424da;
-  --header-background: rgba(36, 46, 33, 255)
+  --header-background: rgba(36, 46, 33, 255);
 }
 
 
@@ -19,6 +19,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--page-background);
 }
 
 h1,
@@ -39,17 +40,32 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: var(--header-background);
+  height: 70px;
 }
 /* logo */
+#logo {
+  display: flex;
+  width: 20%;
+  background-color: var(--text);
+  padding-left: 50px;
+  align-items: center;
+}
+#logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
 h1 {
-  width: 15%;
+  color: var(--header-text);
 }
 /* navigation */
 nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  color: rgba(104, 129, 73, 255);
+  color: var(--text);
 }
 nav ul {
   display: flex;
