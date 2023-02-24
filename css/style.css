@@ -1,0 +1,35 @@
+/* variables */
+:root {
+  --page-background: rgb(218, 233, 228);
+  --text: rgba(104, 129, 73, 255);
+  --header-text:  #252424da;
+  --header-background: rgba(36, 46, 33, 255)
+}
+
+
+
+
+/* general rules - predefined */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
