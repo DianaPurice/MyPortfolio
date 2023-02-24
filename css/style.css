@@ -2,12 +2,9 @@
 :root {
   --page-background: rgb(218, 233, 228);
   --text: rgba(104, 129, 73, 255);
-  --header-text:  #252424da;
+  --header-text: #252424da;
   --header-background: rgba(36, 46, 33, 255);
 }
-
-
-
 
 /* general rules - predefined */
 * {
@@ -17,7 +14,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--page-background);
   color: var(--text);
@@ -92,7 +90,7 @@ nav a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  align-items:flex-end;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 .hero-banner h2 {
@@ -104,4 +102,44 @@ nav a {
 .hero-banner span {
   margin-left: 260px;
 }
-
+/* main section */
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25vh 75vh 15vh;
+  grid-template-areas:
+    "about"
+    "work"
+    "contact";
+}
+.page-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vh;
+}
+.page-section h2 {
+  font-size: 4vh;
+  width: 20%;
+  text-align: end;
+  margin-top: 0;
+  padding-right: 1%;
+}
+.page-section div {
+  display: flex;
+  border-left: 3px solid var(--text);
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#about {
+  grid-area: about;
+}
+#work {
+  grid-area: work;
+}
+#contact {
+  grid-area: contact;
+}
