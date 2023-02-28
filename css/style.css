@@ -290,3 +290,118 @@ main {
   width: 100% !important;
   height: 100% !important;
 }
+/* media queries screen-size >= 850 */
+@media only screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    height: 2%;
+  }
+  #logo {
+    width: 100%;
+    padding: 0;
+  }
+  #logo img {
+    display: none;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .hero-banner {
+    height: 250px;
+  }
+  .hero-banner h2 {
+    margin-bottom: 55px;
+  }
+  main {
+    display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 100% 20%;
+    grid-template-areas:
+      "about"
+      "work"
+      "contact";
+  }
+  .page-section {
+    flex-direction: column;
+  }
+  .page-section h2 {
+    border-bottom: 3px solid var(--header-text);
+    padding: 0;
+    width: 100%;
+    text-align: start;
+  }
+  .page-section h2 br {
+    display: none;
+  }
+  .page-section div {
+    border: 0;
+    margin-top: 10px;
+    padding: 0;
+    height: 250px;
+  }
+  #about {
+    height: 300px;
+  }
+  #contact {
+    height: 15vh;
+  }
+  #contact ul {
+    border: 0 !important;
+    margin-bottom: 2%;
+    height: 10vh;
+    margin: 0 !important;
+  }
+  #work {
+    flex-direction: column;
+    height: 80vh !important;
+  } 
+  #app-container {
+    height: 80%;
+    grid-template-rows: 20% 15% 25% 25%;
+  }
+  #first a {
+    width: 91%;
+  }
+  .app {
+    margin: 0 !important;
+  }
+  .app a {
+    height: 160px;
+  }
+  .app img {
+    opacity: 1;
+  }
+  .app img {
+    height: 162px !important;
+  }
+  .app-heading {
+    height: 52px !important;
+  }
+  #first img {
+    width: 100%;
+    height: 242px !important;
+  }
+  .row3,
+  .row2 {
+    height: 170px !important;
+    margin-top: 15px !important;
+  }
+  .column2 {
+    margin-left: 10px !important;
+  }
+  .row3 .app-heading {
+    position: absolute;
+    top: 141vh !important;
+  }
+  .row2 .app-heading {
+    position: absolute;
+    top: 123vh !important;
+  }
+}
