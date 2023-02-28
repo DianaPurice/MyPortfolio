@@ -274,8 +274,11 @@ main {
 /* work section row2 and row3 areas images definition */
 .row2 img,
 .row3 img {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100% ;
+  height: 100% ;
+}
+.empty:hover {
+  cursor: default;
 }
 /* media queries */
 @media only screen and (max-width: 1000px) {
@@ -304,6 +307,7 @@ main {
     border-bottom: 3px solid var(--header-text);
     margin-left: 3vw;
     width: 92%;
+    margin-bottom: 1vh;
   }
   .page-section h2 br {
     display: none;
@@ -311,7 +315,7 @@ main {
   .page-section div {
     border: 0;
   }
-  #contact ul{
+  #contact ul {
     border: 0;
   }
   #first img {
@@ -319,5 +323,68 @@ main {
   }
   #first .app-heading {
     bottom: 90px;
+  }
+  #work img {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-rows: 40vh 100vh 30vh;
+  }
+  #app-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18vh 18vh 18vh 18vh 18vh;
+    grid-template-areas: 
+    "first-app"
+    "second-app"
+    "third-app"
+    "fourth-app"
+    "fifth-app";
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #app-container a {
+    height: 97%;
+  }
+  #first {
+    width: 99%;
+  }
+  .column1, .column2 {
+    margin: 0 !important;
+  }
+  #contact ul {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 3vh;
+  }
+  #contact li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .row2 .app-heading, .row3 .app-heading {
+    max-height: 30%;
+  }
+  #first .app-heading {
+    bottom: 110px;
+    max-height: 5%;
+  }
+  .hero-banner {
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .hero-banner h2 {
+    background: -webkit-linear-gradient(
+      var(--page-background),
+      var(--header-background)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+  }
+  .hero-banner h2 span {
+    margin: 0;
   }
 }
