@@ -50,12 +50,14 @@ header {
   padding-left: 50px;
   align-items: center;
 }
+/* logo image */
 #logo img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-left: 9px;
 }
+/* logo title*/
 h1 {
   color: var(--header-text);
 }
@@ -66,6 +68,7 @@ nav {
   justify-content: flex-end;
   color: var(--text);
 }
+/* navigation list */
 nav ul {
   display: flex;
   flex-direction: row;
@@ -73,6 +76,7 @@ nav ul {
   justify-content: space-around;
   margin-right: 50px;
 }
+/* navigation links*/
 nav a {
   text-decoration: none;
   margin-right: 10px;
@@ -93,6 +97,7 @@ nav a {
   align-items: flex-end;
   justify-content: flex-end;
 }
+/* banner subtitles */
 .hero-banner h2 {
   margin-bottom: 10px;
   color: var(--header-background);
@@ -117,6 +122,7 @@ main {
   flex-direction: row;
   margin-top: 3vh;
 }
+/* main section header*/
 .page-section h2 {
   font-size: 4vh;
   width: 20%;
@@ -124,6 +130,7 @@ main {
   margin-top: 0;
   padding-right: 1%;
 }
+/* main section content*/
 .page-section div {
   display: flex;
   border-left: 3px solid var(--header-text);
@@ -132,16 +139,19 @@ main {
   height: 100%;
   width: 100%;
 }
+/* about section grid area */
 #about {
   grid-area: about;
 }
+/* work section grid area */
 #work {
   grid-area: work;
 }
+/* contact section grid area */
 #contact {
   grid-area: contact;
 }
-/* contact section */
+/* contact section list */
 #contact ul {
   margin-top: 0;
   height: 15vh;
@@ -155,12 +165,15 @@ main {
   padding-left: 3vw;
   padding-right: 3vw;
 }
+/* contact section links */
 #contact a {
   text-decoration: none;
   color: var(--header-text);
   border-bottom: 2px solid var(--header-text);
   padding-bottom: 2%;
-} /* work */
+}
+/* work */
+/* work section grid definition */
 #app-container {
   display: grid;
   grid-template-columns: 49% 49%;
@@ -171,6 +184,7 @@ main {
     "second-app third-app"
     "fourth-app fifth-app";
 }
+/* grid areas general rules */
 .app {
   background-position: center;
   background-size: cover;
@@ -180,58 +194,7 @@ main {
   border: 5px solid var(--header-text) !important;
   padding: 0 !important;
 }
-#first a {
-  border: 0 !important;
-  position: absolute;
-}
-.app-heading {
-  position: absolute !important;
-  display: flex !important;
-  flex-direction: column;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  color: white;
-  background-color: var(--header-text);
-  padding-left: 10px !important;
-  border: 0 !important;
-}
-#first .app-heading {
-  top: 170px;
-  max-height: 22%;
-}
-.row2 .app-heading {
-  top: 112vh;
-  max-height: 7.5%;
-}
-.row3 .app-heading {
-  top: 134vh;
-  max-height: 7.5%;
-}
-
-.row2 .app-heading,
-.row3 .app-heading {
-  position: absolute;
-}
-.row2 a,
-.row3 a {
-  width: 100%;
-}
-.row2 img,
-.row3 img {
-  width: 100% !important;
-  height: 100% !important;
-}
-.app img {
-  opacity: 0.5;
-  width: 73.8vw;
-  height: 238px;
-  object-fit: cover;
-}
-.app img:hover {
-  opacity: 1;
-  transition: 0.5s;
-}
-
+/* work section rows definition */
 .row2 {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -245,10 +208,12 @@ main {
   margin-left: 2%;
   width: 98% !important;
 }
+/* work section columns definition */
 .column1 {
   margin-right: 2%;
   margin-left: 0;
 }
+/* work section areas definition */
 #first {
   grid-area: first-app;
 }
@@ -263,4 +228,64 @@ main {
 }
 #fifth {
   grid-area: fifth-app;
+}
+/* work section areas headings general definition */
+.app-heading {
+  position: absolute !important;
+  display: flex !important;
+  flex-direction: column;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  color: white;
+  background-color: var(--header-text);
+  padding-left: 10px !important;
+  border: 0 !important;
+}
+/* work section first area heading definition */
+#first .app-heading {
+  top: 170px;
+  max-height: 22%;
+}
+/* work section row2 and row3 areas general heading definition */
+.row2 .app-heading,
+.row3 .app-heading {
+  position: absolute;
+}
+/* work section row2 areas heading definition */
+.row2 .app-heading {
+  top: 112vh;
+  max-height: 7.5%;
+}
+/* work section row3 areas heading definition */
+.row3 .app-heading {
+  top: 134vh;
+  max-height: 7.5%;
+}
+/* work section first area links definition */
+#first a {
+  border: 0 !important;
+  position: absolute;
+}
+/* work section row2 and row3 areas links definition */
+.row2 a,
+.row3 a {
+  width: 100%;
+}
+/* work section areas images definition */
+.app img:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+/* work section first area images definition */
+.app img {
+  opacity: 0.5;
+  width: 73.8vw;
+  height: 238px;
+  object-fit: cover;
+}
+/* work section row2 and row3 areas images definition */
+.row2 img,
+.row3 img {
+  width: 100% !important;
+  height: 100% !important;
 }
