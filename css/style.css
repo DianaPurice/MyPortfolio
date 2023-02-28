@@ -279,9 +279,10 @@ main {
 /* work section first area images definition */
 .app img {
   opacity: 0.5;
-  width: 73.8vw;
+  width: 74.2vw;
   height: 238px;
   object-fit: cover;
+  overflow: hidden;
 }
 /* work section row2 and row3 areas images definition */
 .row2 img,
