@@ -252,7 +252,8 @@ main {
   position: relative;
 }
 /* work section row2 areas heading definition */
-.row2 .app-heading, .row3 .app-heading {
+.row2 .app-heading,
+.row3 .app-heading {
   max-height: 42%;
   bottom: 5%;
 }
@@ -276,4 +277,47 @@ main {
   width: 100% !important;
   height: 100% !important;
 }
-
+/* media queries */
+@media only screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    height: 10%;
+  }
+  #logo,
+  h1 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  #logo img {
+    display: none;
+  }
+  nav ul {
+    width: 100%;
+  }
+  .page-section {
+    flex-direction: column;
+  }
+  .page-section h2 {
+    width: 100%;
+    text-align: start;
+    border-bottom: 3px solid var(--header-text);
+    margin-left: 3vw;
+    width: 92%;
+  }
+  .page-section h2 br {
+    display: none;
+  }
+  .page-section div {
+    border: 0;
+  }
+  #contact ul{
+    border: 0;
+  }
+  #first img {
+    width: 100%;
+  }
+  #first .app-heading {
+    bottom: 90px;
+  }
+}
