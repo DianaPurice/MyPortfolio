@@ -16,19 +16,31 @@ Use the navigation to navigate to the desired section.
 ![Navigation section](assests\images\navigation.jpg)
 
 Find the projects under the work section.
-![Navigation section](assests\images\apps.jpg)
+![Projects](assests\images\apps.jpg)
 
 Hover over the project you wish to see.
-![Navigation section](assests\images\app-hover.jpg)
+![Hover project](assests\images\app-hover.jpg)
 
 Call directly from the phone number link in the contact section.
-![Navigation section](assests\images\contact-call.jpg)
+![Phone call](assests\images\contact-call.jpg)
 
 Send email directly from the email link in the contact section.
-![Navigation section](assests\images\contact-gmail.jpg)
+![Email](assests\images\contact-gmail.jpg)
 
 Access my GitHub page via the link in the contact section.
-![Navigation section](assests\images\github.jpg)
+![GitHub](assests\images\github.jpg)
+
+Mobile view top.
+![Mobile view](assests\images\phone.jpg)
+
+Mobile view bottom.
+![Mobile view](assests\images\phone1.jpg)
+
+Tablet view top.
+![Mobile view](assests\images\tablet1.jpg)
+
+Tablet view bottom.
+![Mobile view](assests\images\tablet2.jpg)
 
 
 ## Credits

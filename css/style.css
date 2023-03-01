@@ -300,6 +300,7 @@ main {
   }
   .page-section {
     flex-direction: column;
+    height: min-content;
   }
   .page-section h2 {
     width: 100%;
@@ -322,10 +323,16 @@ main {
     width: 100%;
   }
   #first .app-heading {
-    bottom: 90px;
+    bottom: -70px;
   }
   #work img {
     opacity: 1;
+  }
+  #work {
+    margin-top: 10vh;
+  }
+  #contact {
+    margin-top: 13vh;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -350,6 +357,9 @@ main {
   }
   #first {
     width: 99%;
+  }
+  #work, #contact {
+    margin-top: 0;
   }
   .column1, .column2 {
     margin: 0 !important;
