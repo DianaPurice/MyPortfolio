@@ -9,6 +9,7 @@ this webpage contains the project I have build so far and I have built it in the
 ## Installation
 
 No installation required.
+Can be accessed at: https://dianapurice.github.io/MyPortfolio/
 
 ## Usage
 
